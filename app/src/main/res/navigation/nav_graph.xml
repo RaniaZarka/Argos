@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/argos">
+
+    <fragment
+        android:id="@+id/argos"
+        android:name="com.example.cargo.Argos"
+        android:label="fragment_argos"
+        tools:layout="@layout/fragment_argos" >
+        <action
+            android:id="@+id/action_argos_to_plasticTypes"
+            app:destination="@id/plasticTypes" />
+        <action
+            android:id="@+id/action_argos_to_refundType"
+            app:destination="@id/refundType" />
+    </fragment>
+    <fragment
+        android:id="@+id/plasticTypes"
+        android:name="com.example.cargo.plasticTypes"
+        android:label="fragment_plastic_types"
+        tools:layout="@layout/fragment_plastic_types" />
+    <fragment
+        android:id="@+id/refundType"
+        android:name="com.example.cargo.refundType"
+        android:label="fragment_refund_type"
+        tools:layout="@layout/fragment_refund_type" />
+</navigation>
