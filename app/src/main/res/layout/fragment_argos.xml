@@ -160,7 +160,6 @@
                         android:layout_margin="5dp"
                         android:scaleType="fitCenter"
                         android:backgroundTint="@color/lime_green"
-
                         android:src="@drawable/plastic_1"
                       />
                     <ImageButton

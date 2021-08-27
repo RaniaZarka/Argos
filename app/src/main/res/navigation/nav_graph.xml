@@ -3,27 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/argos">
+    app:startDestination="@id/fragment_argos">
 
     <fragment
-        android:id="@+id/argos"
+        android:id="@+id/fragment_argos"
         android:name="com.example.cargo.Argos"
         android:label="fragment_argos"
         tools:layout="@layout/fragment_argos" >
         <action
             android:id="@+id/action_argos_to_plasticTypes"
-            app:destination="@id/plasticTypes" />
+            app:destination="@id/fragment_plasticTypes" />
         <action
             android:id="@+id/action_argos_to_refundType"
-            app:destination="@id/refundType" />
+            app:destination="@id/fragment_refundType" />
     </fragment>
     <fragment
-        android:id="@+id/plasticTypes"
+        android:id="@+id/fragment_plasticTypes"
         android:name="com.example.cargo.plasticTypes"
         android:label="fragment_plastic_types"
         tools:layout="@layout/fragment_plastic_types" />
     <fragment
-        android:id="@+id/refundType"
+        android:id="@+id/fragment_refundType"
         android:name="com.example.cargo.refundType"
         android:label="fragment_refund_type"
         tools:layout="@layout/fragment_refund_type" />
