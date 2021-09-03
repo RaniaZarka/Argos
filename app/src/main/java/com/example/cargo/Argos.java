@@ -35,25 +35,68 @@ public class Argos extends Fragment {
         ImageButton type7Button = view.findViewById(R.id.type7);
         Button guide = view.findViewById(R.id.guide);
 
-        type1Button.setOnClickListener(onClick);
-        type2Button.setOnClickListener(onClick);
-        type3Button.setOnClickListener(onClick);
-        type4Button.setOnClickListener(onClick);
-        type5Button.setOnClickListener(onClick);
-        type6Button.setOnClickListener(onClick);
-        type7Button.setOnClickListener(onClick);
+        type1Button.setOnClickListener(onClickType1);
+        type2Button.setOnClickListener(onClickType2);
+        type3Button.setOnClickListener(onClickType3);
+        type4Button.setOnClickListener(onClickType4);
+        type5Button.setOnClickListener(onClickType5);
+        type6Button.setOnClickListener(onClickType6);
+        type7Button.setOnClickListener(onClickType7);
 
         guide.setOnClickListener(onClickToGuide);
 
             return view;
         }
 
-     View.OnClickListener onClick= new View.OnClickListener() {
+     View.OnClickListener onClickType1 = new View.OnClickListener() {
          @Override
          public void onClick(View view) {
-             Navigation.findNavController(requireView()).navigate(R.id.fragment_plasticTypes);
+             ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(1);
+             Navigation.findNavController(requireView()).navigate(action);
          }
      };
+    View.OnClickListener onClickType2 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(2);
+            Navigation.findNavController(requireView()).navigate(action);
+        }
+    };
+    View.OnClickListener onClickType3 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(3);
+            Navigation.findNavController(requireView()).navigate(action);
+        }
+    };
+    View.OnClickListener onClickType4 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(4);
+            Navigation.findNavController(requireView()).navigate(action);
+        }
+    };
+    View.OnClickListener onClickType5 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(5);
+            Navigation.findNavController(requireView()).navigate(action);
+        }
+    };
+    View.OnClickListener onClickType6 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(6);
+            Navigation.findNavController(requireView()).navigate(action);
+        }
+    };
+    View.OnClickListener onClickType7 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(7);
+            Navigation.findNavController(requireView()).navigate(action);
+        }
+    };
 
     View.OnClickListener onClickToGuide= new View.OnClickListener() {
         @Override

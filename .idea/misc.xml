@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/layout/fragment_refund_type.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/knedl/StudioProjects/Argos/app/src/main/res/layout/activity_main.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/knedl/StudioProjects/Argos/app/src/main/res/layout/fragment_argos.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/knedl/StudioProjects/Argos/app/src/main/res/layout/fragment_plastic_types.xml" value="0.2" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/drawable/rounded_border.xml" value="0.2265625" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/drawable/rounded_border_red.xml" value="0.2265625" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/drawable/rounded_border_white.xml" value="0.2265625" />
@@ -12,7 +15,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

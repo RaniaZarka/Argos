@@ -21,7 +21,11 @@
         android:id="@+id/fragment_plasticTypes"
         android:name="com.example.cargo.plasticTypes"
         android:label="fragment_plastic_types"
-        tools:layout="@layout/fragment_plastic_types" />
+        tools:layout="@layout/fragment_plastic_types" >
+        <argument
+            android:name="plasticType"
+            app:argType="integer" />
+    </fragment>
     <fragment
         android:id="@+id/fragment_refundType"
         android:name="com.example.cargo.refundType"
