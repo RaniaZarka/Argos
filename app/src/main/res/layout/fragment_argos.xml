@@ -30,7 +30,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="ARGO"
+            android:text="argo"
             android:gravity="center"
             android:textColor="@color/dark_olive_green"
             android:textSize="45sp" />
@@ -258,7 +258,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="3"
-                android:src="@drawable/pant_a"/>
+                android:src="@drawable/pant"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
