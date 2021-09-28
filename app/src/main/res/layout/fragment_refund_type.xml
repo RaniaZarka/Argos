@@ -8,54 +8,36 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
 
-        <TextView
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:id="@+id/textField1"
-            android:textSize="14sp"
-            android:textColor="@color/lime_green">
-        </TextView>
+            android:layout_height="40dp"
+            android:src="@drawable/argologofb"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:id="@+id/textField2"
-            android:textSize="14sp"
-            android:textColor="@color/lime_green">
-        </TextView>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:orientation="horizontal"
-        android:background="@color/white">
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:background="@color/argo_orange">
 
-        <ImageView
+        <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:id="@+id/image1"
-            android:src="@drawable/pants"/>
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:id="@+id/image2"
-            android:src="@drawable/recycling12"/>
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/buttonField1"
+            android:gravity="bottom"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="See the refund amounts for various types of bottles and cans"
+            android:backgroundTint="@color/argo_orange"/>
     </LinearLayout>
 
     <LinearLayout
@@ -64,38 +46,123 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
-        android:layout_weight="1.5"
-        android:orientation="vertical">
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:background="@color/argo_blue">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:id="@+id/textField3"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:id="@+id/textField1"
             android:layout_gravity="fill_vertical"
             android:textSize="15sp"
-            android:textColor="@color/dark_green">
-        </TextView>
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/pant_a"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:layout_weight="1"
-            android:id="@+id/textField4"
-            android:layout_gravity="fill_vertical"
-            android:textSize="14sp"
-            android:textColor="@color/lime_green">
-        </TextView>
+            android:id="@+id/textField2"
+            android:layout_gravity="fill_horizontal"
+            android:textSize="17sp"
+            android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/pant_b" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_gravity="fill_horizontal"
+                android:textSize="17sp"
+                android:id="@+id/textField3"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/pant_c"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_gravity="fill_horizontal"
+                android:textSize="17sp"
+                android:id="@+id/textField4"
+                android:textColor="@color/white"/>
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_weight="2"
             android:id="@+id/textField5"
             android:layout_gravity="fill_vertical"
             android:textSize="15sp"
-            android:textColor="@color/dark_green"/>
+            android:textColor="@color/white"/>
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/textField6"
+            android:layout_gravity="fill_vertical"
+            android:textSize="12sp"
+            android:textColor="@color/argo_blue"/>
+
+    </LinearLayout>
+
+
+
+
 
 
 </LinearLayout>
