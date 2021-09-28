@@ -29,8 +29,7 @@ public class type1_fragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        int plasticTypeNumber = plasticTypesArgs.fromBundle(getArguments()).getPlasticType();
+        /*int plasticTypeNumber = plasticTypesArgs.fromBundle(getArguments()).getPlasticType();
         PlasticType plasticType = null;
         try {
             plasticType = new PlasticTypeList().GetPlasticType(plasticTypeNumber);
@@ -46,6 +45,6 @@ public class type1_fragment extends Fragment {
         descriptionTW.setText(plasticType.getDescription());
         foundInTW.setText(plasticType.getFoundIn());
         tipsToAvoidTW.setText(plasticType.getTipsToAvoid());
-        ratingTW.setText(plasticType.getRating());
+        ratingTW.setText(plasticType.getRating());*/
     }
 }

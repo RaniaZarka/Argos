@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background"
+
     tools:context=".Argos">
 
 
@@ -14,36 +14,15 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:background="@color/white"
-
-       >
+        android:background="@color/white">
 
         <ImageView
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="1"
 
-            android:src="@drawable/logo" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:text="argo"
-            android:gravity="center"
-            android:textColor="@color/dark_olive_green"
-            android:textSize="45sp" />
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:layout_weight="1.2"
-            android:src="@drawable/logo" />
-
-
+            android:src="@drawable/argo" />
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -52,100 +31,100 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/rounded_border_white"
+        android:background="@color/argo_orange"
         android:orientation="horizontal">
-
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
             android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="Flip the bottle"
-                android:textAlignment="center"
-                android:textColor="@color/dark_olive_green"
-                android:textSize="10sp" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="4"
-                android:src="@drawable/bottle"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="4"
-                android:src="@drawable/bottom_of_bottle" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1.5"
-                android:text="Look at the bottom"
-                android:textAlignment="center"
-                android:textColor="@color/dark_olive_green"
-                android:textSize="10sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="10dp"
             android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="What do you see?"
+                android:text="Plastic product?"
                 android:textAlignment="center"
-                android:textColor="@color/dark_olive_green"
-                android:textSize="10sp" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="3" />
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:src="@drawable/plastic1"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reduce"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reuse"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recycle"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5"
+        android:layout_weight="4"
         android:layout_margin="10dp"
-        android:orientation="horizontal">
+        android:background="@color/argo_blue"
+        android:orientation="vertical">
+
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@drawable/rounded_border_white"
-            android:layout_height="match_parent"
             android:layout_marginRight="5dp"
-            >
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Which logo your plastic product has?"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click for details"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
             <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
                 >
                 <TableRow
                     android:layout_width="0dp"
@@ -159,8 +138,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:scaleType="fitCenter"
-                        android:background="@drawable/rounded_border_lime"
-                        android:src="@drawable/plastic_1"
+                        android:src="@drawable/white_recycle_logo_1"
                       />
                     <ImageButton
                         android:id="@+id/type2"
@@ -171,20 +149,19 @@
                         android:src="@drawable/plastic_2"
                         android:background="@drawable/rounded_border_lime"
                         android:scaleType="fitCenter"/>
-                </TableRow>
-                <TableRow
-                    android:layout_width="0dp"
-                    android:layout_weight="1">
                     <ImageButton
                         android:id="@+id/type3"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
-                        android:background="@drawable/rounded_border_yellow"
                         android:src="@drawable/plastic_3"
-                        android:scaleType="fitCenter"
-                        />
+                        android:background="@drawable/rounded_border_lime"
+                        android:scaleType="fitCenter"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
                     <ImageButton
                         android:id="@+id/type4"
                         android:layout_width="0dp"
@@ -192,33 +169,30 @@
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:background="@drawable/rounded_border_yellow"
+                        android:src="@drawable/plastic_4"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/plastic_4"/>
-                </TableRow>
-                <TableRow
-                    android:layout_width="0dp"
-                    android:layout_weight="1">
+                        />
                     <ImageButton
                         android:id="@+id/type5"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
-                        android:background="@drawable/rounded_border_lime"
+                        android:background="@drawable/rounded_border_yellow"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/plastic_5"
-                        />
+                        android:src="@drawable/plastic_5"/>
                     <ImageButton
                         android:id="@+id/type6"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
-                        android:background="@drawable/rounded_border_yellow"
+                        android:background="@drawable/rounded_border_lime"
                         android:scaleType="fitCenter"
                         android:src="@drawable/plastic_6"
                         />
                 </TableRow>
+
                 <TableRow  android:layout_width="0dp"
                     android:layout_weight="1" >
                     <ImageButton
@@ -237,51 +211,74 @@
             </TableLayout>
 
         </LinearLayout>
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/argo_orange"
+        android:orientation="horizontal">
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:background="@drawable/rounded_border_white"
-            android:layout_marginLeft="5dp"
             android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Your item has this logo?"
-                android:textColor="@color/dark_olive_green"
-                android:gravity="center"
-                android:textSize="13sp" />
+                android:text="Plastic product?"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="3" />
+                android:layout_weight="5"
+                android:src="@drawable/plastic1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="Your Item is refundable"
-                android:textColor="@color/dark_olive_green"
-                android:textSize="13sp"
-                android:gravity="center"/>
-            <Button
-                android:id="@+id/guide"
+                android:layout_height="wrap_content"
+                android:text="Reduce"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_margin="31dp"
-                android:layout_height="0dp"
-                android:layout_weight="1.2"
-                android:text="Guide"
-                android:textColor="@color/dark_olive_green"
-                android:backgroundTint="@color/lime_green"
-                android:textAlignment="center"/>
-
-
-
+                android:layout_height="wrap_content"
+                android:text="Reuse"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recycle"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"/>
         </LinearLayout>
 
-
     </LinearLayout>
+
+
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
