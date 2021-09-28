@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.example.cargo.classes.PlasticType;
 import com.example.cargo.classes.PlasticTypeList;
 
-public class plasticTypes extends Fragment {
+public class type1_fragment extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class plasticTypes extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_plastic_types, container, false);
+        return inflater.inflate(R.layout.fragment_type1, container, false);
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {

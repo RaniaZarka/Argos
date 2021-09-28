@@ -16,12 +16,36 @@
         <action
             android:id="@+id/action_argos_to_refundType"
             app:destination="@id/fragment_refundType" />
+        <action
+            android:id="@+id/action_fragment_argos_to_type2_fragment"
+            app:destination="@id/type2_fragment" />
+        <action
+            android:id="@+id/action_fragment_argos_to_type3_fragment"
+            app:destination="@id/type3_fragment" />
+        <action
+            android:id="@+id/action_fragment_argos_to_type4_fragment"
+            app:destination="@id/type4_fragment" />
+        <action
+            android:id="@+id/action_fragment_argos_to_type5_fragment"
+            app:destination="@id/type5_fragment" />
+        <action
+            android:id="@+id/action_fragment_argos_to_type6_fragment"
+            app:destination="@id/type6_fragment" />
+        <action
+            android:id="@+id/action_fragment_argos_to_type7_fragment"
+            app:destination="@id/type7_fragment" />
+        <action
+            android:id="@+id/action_fragment_argos_to_search_fragment"
+            app:destination="@id/search_fragment" />
+        <action
+            android:id="@+id/action_fragment_argos_to_contact_fragment"
+            app:destination="@id/contact_fragment" />
     </fragment>
     <fragment
         android:id="@+id/fragment_plasticTypes"
-        android:name="com.example.cargo.plasticTypes"
+        android:name="com.example.cargo.type1_fragment"
         android:label="fragment_plastic_types"
-        tools:layout="@layout/fragment_plastic_types" >
+        tools:layout="@layout/fragment_type1" >
         <argument
             android:name="plasticType"
             app:argType="integer" />
@@ -31,4 +55,44 @@
         android:name="com.example.cargo.refundType"
         android:label="fragment_refund_type"
         tools:layout="@layout/fragment_refund_type" />
+    <fragment
+        android:id="@+id/type2_fragment"
+        android:name="com.example.cargo.type2_fragment"
+        android:label="fragment_type2_fragment"
+        tools:layout="@layout/fragment_type2_fragment" />
+    <fragment
+        android:id="@+id/type3_fragment"
+        android:name="com.example.cargo.classes.type3_fragment"
+        android:label="fragment_type3_fragment"
+        tools:layout="@layout/fragment_type3_fragment" />
+    <fragment
+        android:id="@+id/type4_fragment"
+        android:name="com.example.cargo.classes.type4_fragment"
+        android:label="fragment_type4_fragment"
+        tools:layout="@layout/fragment_type4_fragment" />
+    <fragment
+        android:id="@+id/type5_fragment"
+        android:name="com.example.cargo.classes.type5_fragment"
+        android:label="fragment_type5_fragment"
+        tools:layout="@layout/fragment_type5_fragment" />
+    <fragment
+        android:id="@+id/type6_fragment"
+        android:name="com.example.cargo.classes.type6_fragment"
+        android:label="fragment_type6_fragment"
+        tools:layout="@layout/fragment_type6_fragment" />
+    <fragment
+        android:id="@+id/type7_fragment"
+        android:name="com.example.cargo.classes.type7_fragment"
+        android:label="fragment_type7_fragment"
+        tools:layout="@layout/fragment_type7_fragment" />
+    <fragment
+        android:id="@+id/search_fragment"
+        android:name="com.example.cargo.classes.search_fragment"
+        android:label="fragment_search_fragment"
+        tools:layout="@layout/fragment_search_fragment" />
+    <fragment
+        android:id="@+id/contact_fragment"
+        android:name="com.example.cargo.classes.contact_fragment"
+        android:label="fragment_contact_fragment"
+        tools:layout="@layout/fragment_contact_fragment" />
 </navigation>
