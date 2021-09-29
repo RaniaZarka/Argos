@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.Cargo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/forest_green</item>
-        <item name="colorPrimaryVariant">@color/forest_green</item>
+        <item name="colorPrimary">@color/argo_orange</item>
+        <item name="colorPrimaryVariant">@color/argo_orange</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -14,4 +14,5 @@
         <!-- Customize your theme here. -->
         <item name="android:fontFamily">@font/mulish</item>
     </style>
+    <style name="font"> "@android:style/TextAppearance.DeviceDefault.Medium"</style>
 </resources>

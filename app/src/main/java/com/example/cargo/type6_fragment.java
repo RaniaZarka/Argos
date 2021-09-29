@@ -1,4 +1,4 @@
-package com.example.cargo.classes;
+package com.example.cargo;
 
 import android.os.Bundle;
 
@@ -8,14 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.cargo.R;
-
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link search_fragment#newInstance} factory method to
+ * Use the {@link type6_fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class search_fragment extends Fragment {
+public class type6_fragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +24,7 @@ public class search_fragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public search_fragment() {
+    public type6_fragment() {
         // Required empty public constructor
     }
 
@@ -36,11 +34,11 @@ public class search_fragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment search_fragment.
+     * @return A new instance of fragment type6_fragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static search_fragment newInstance(String param1, String param2) {
-        search_fragment fragment = new search_fragment();
+    public static type6_fragment newInstance(String param1, String param2) {
+        type6_fragment fragment = new type6_fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +59,6 @@ public class search_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_search_fragment, container, false);
+        return inflater.inflate(R.layout.fragment_type6_fragment, container, false);
     }
 }

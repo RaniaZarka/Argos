@@ -62,37 +62,37 @@
         tools:layout="@layout/fragment_type2_fragment" />
     <fragment
         android:id="@+id/type3_fragment"
-        android:name="com.example.cargo.classes.type3_fragment"
+        android:name="com.example.cargo.type3_fragment"
         android:label="fragment_type3_fragment"
         tools:layout="@layout/fragment_type3_fragment" />
     <fragment
         android:id="@+id/type4_fragment"
-        android:name="com.example.cargo.classes.type4_fragment"
+        android:name="com.example.cargo.type4_fragment"
         android:label="fragment_type4_fragment"
         tools:layout="@layout/fragment_type4_fragment" />
     <fragment
         android:id="@+id/type5_fragment"
-        android:name="com.example.cargo.classes.type5_fragment"
+        android:name="com.example.cargo.type5_fragment"
         android:label="fragment_type5_fragment"
         tools:layout="@layout/fragment_type5_fragment" />
     <fragment
         android:id="@+id/type6_fragment"
-        android:name="com.example.cargo.classes.type6_fragment"
+        android:name="com.example.cargo.type6_fragment"
         android:label="fragment_type6_fragment"
         tools:layout="@layout/fragment_type6_fragment" />
     <fragment
         android:id="@+id/type7_fragment"
-        android:name="com.example.cargo.classes.type7_fragment"
+        android:name="com.example.cargo.type7_fragment"
         android:label="fragment_type7_fragment"
         tools:layout="@layout/fragment_type7_fragment" />
     <fragment
         android:id="@+id/search_fragment"
-        android:name="com.example.cargo.classes.search_fragment"
+        android:name="com.example.cargo.search_fragment"
         android:label="fragment_search_fragment"
         tools:layout="@layout/fragment_search_fragment" />
     <fragment
         android:id="@+id/contact_fragment"
-        android:name="com.example.cargo.classes.contact_fragment"
+        android:name="com.example.cargo.contact_fragment"
         android:label="fragment_contact_fragment"
         tools:layout="@layout/fragment_contact_fragment" />
 </navigation>

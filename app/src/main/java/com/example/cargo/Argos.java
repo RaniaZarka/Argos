@@ -33,7 +33,7 @@ public class Argos extends Fragment {
         ImageButton type5Button = view.findViewById(R.id.type5);
         ImageButton type6Button = view.findViewById(R.id.type6);
         ImageButton type7Button = view.findViewById(R.id.type7);
-        //Button guide = view.findViewById(R.id.guide);
+        Button guide = view.findViewById(R.id.guide);
 
         type1Button.setOnClickListener(onClickType1);
         type2Button.setOnClickListener(onClickType2);
@@ -43,7 +43,7 @@ public class Argos extends Fragment {
         type6Button.setOnClickListener(onClickType6);
         type7Button.setOnClickListener(onClickType7);
 
-        //guide.setOnClickListener(onClickToGuide);
+        guide.setOnClickListener(onClickToGuide);
 
             return view;
         }
