@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class refundType extends Fragment {
@@ -23,7 +24,8 @@ public class refundType extends Fragment {
 // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_refund_type, container, false);
 
-        Button button1 = view.findViewById(R.id.buttonField1);
+        ImageButton button1 = view.findViewById(R.id.imagebuttonrefundable);
+        TextView text7 = view.findViewById(R.id.buttonField1);
         TextView text1 = view.findViewById(R.id.textField1);
         TextView text2 = view.findViewById(R.id.textField2);
         TextView text3 = view.findViewById(R.id.textField3);
@@ -33,6 +35,7 @@ public class refundType extends Fragment {
 
 
         button1.setOnClickListener(OnClickBack);
+        text7.setText("See the refund amount for variuos types of bottles and cans");
         text1.setText("The backbone of the Danish deposit and return system is the ABC deposit system, because different amounts are refunded for Pant A, Pant B and Pant C.");
         text2.setText("DKK 1 \n" + "Glass bottles and aliuminium cans less than 1 litre");
         text3.setText("DKK 1.50 \n" + "Plastic bottles less than 1 litre");

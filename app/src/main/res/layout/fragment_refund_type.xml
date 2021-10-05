@@ -12,9 +12,9 @@
         android:layout_weight="0">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:src="@drawable/argologofb"/>
+            android:src="@drawable/argo"/>
 
     </LinearLayout>
 
@@ -28,16 +28,34 @@
         android:orientation="vertical"
         android:background="@color/argo_orange">
 
-        <Button
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:src="@drawable/arrowback"
+                android:id="@+id/imagebuttonrefundable"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:backgroundTint="@color/argo_orange"
+                android:tint="@color/argo_orange"
+                android:tintMode="add"/>
+        </LinearLayout>
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:id="@+id/buttonField1"
-            android:gravity="bottom"
-            android:textSize="12sp"
+            android:gravity="center"
+            android:textSize="15sp"
             android:textColor="@color/white"
-            android:text="See the refund amounts for various types of bottles and cans"
             android:backgroundTint="@color/argo_orange"/>
+
     </LinearLayout>
 
     <LinearLayout
