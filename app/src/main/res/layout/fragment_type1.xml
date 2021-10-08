@@ -33,6 +33,7 @@
             android:layout_width="50dp"
             android:layout_height="80dp"
             android:src="@drawable/arrowback"
+            android:id="@+id/ImageButtonBackArrow"
             android:layout_weight="1"
             android:scaleType="fitXY"
             android:layout_gravity="center"
@@ -71,7 +72,94 @@
         android:orientation="vertical"
         android:background="@color/argo_blue">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/TextField1"
+            android:textSize="15sp"
+            android:textColor="@color/white"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/plasticbox"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/glassbox"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/plasticpepsi"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/canpepsi"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/plyestershirt"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/cottonshirt"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/TextFieldTwo"
+            android:textSize="15sp"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 

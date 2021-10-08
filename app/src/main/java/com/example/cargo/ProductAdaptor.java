@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.load.model.GlideUrl;
 import com.example.cargo.classes.ProductsModel;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
@@ -41,6 +42,8 @@ public class ProductAdaptor extends FirestoreRecyclerAdapter<ProductsModel, Prod
     class ProductHolder extends RecyclerView.ViewHolder{
         TextView productName, productDetails;
         ImageView productType, productSmiley, productImage;
+
+
 
         public ProductHolder(@NonNull View itemView) {
             super(itemView);
