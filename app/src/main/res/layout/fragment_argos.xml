@@ -246,6 +246,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1.5"
                 android:text="Search"
+                android:id="@+id/search"
                 android:autoSizeTextType="uniform"
                 android:textAllCaps="false"
                 android:textColor="@color/white"

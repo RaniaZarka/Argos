@@ -34,6 +34,7 @@ public class Argos extends Fragment {
         ImageButton type6Button = view.findViewById(R.id.type6);
         ImageButton type7Button = view.findViewById(R.id.type7);
         Button guide = view.findViewById(R.id.guide);
+        Button search = view.findViewById(R.id.search);
 
         type1Button.setOnClickListener(onClickType1);
         type2Button.setOnClickListener(onClickType2);
@@ -44,6 +45,7 @@ public class Argos extends Fragment {
         type7Button.setOnClickListener(onClickType7);
 
         guide.setOnClickListener(onClickToGuide);
+        search.setOnClickListener(onClickToSearch);
 
             return view;
         }
@@ -58,43 +60,43 @@ public class Argos extends Fragment {
     View.OnClickListener onClickType2 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(2);
-            Navigation.findNavController(requireView()).navigate(action);
+            //ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(2);
+            Navigation.findNavController(requireView()).navigate(R.id.type2_fragment);
         }
     };
     View.OnClickListener onClickType3 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(3);
-            Navigation.findNavController(requireView()).navigate(action);
+            //ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(3);
+            Navigation.findNavController(requireView()).navigate(R.id.type3_fragment);
         }
     };
     View.OnClickListener onClickType4 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(4);
-            Navigation.findNavController(requireView()).navigate(action);
+            //ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(4);
+            Navigation.findNavController(requireView()).navigate(R.id.type4_fragment);
         }
     };
     View.OnClickListener onClickType5 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(5);
-            Navigation.findNavController(requireView()).navigate(action);
+            //ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(5);
+            Navigation.findNavController(requireView()).navigate(R.id.type5_fragment);
         }
     };
     View.OnClickListener onClickType6 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(6);
-            Navigation.findNavController(requireView()).navigate(action);
+            //ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(6);
+            Navigation.findNavController(requireView()).navigate(R.id.type6_fragment);
         }
     };
     View.OnClickListener onClickType7 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(7);
-            Navigation.findNavController(requireView()).navigate(action);
+            //ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(7);
+            Navigation.findNavController(requireView()).navigate(R.id.type7_fragment);
         }
     };
 
@@ -105,10 +107,18 @@ public class Argos extends Fragment {
         }
     };
 
+    View.OnClickListener onClickToSearch= new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Navigation.findNavController(requireView()).navigate(R.id.search_fragment);
+        }
+    };
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
 }
+
 
 }

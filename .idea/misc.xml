@@ -4,10 +4,6 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/layout/fragment_refund_type.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos1/app/src/main/res/layout/fragment_argos.xml" value="0.1" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos1/app/src/main/res/layout/fragment_refund_type.xml" value="0.12360688956433637" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos1/app/src/main/res/layout/fragment_search_fragment.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos1/app/src/main/res/layout/fragment_type1.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/knedl/StudioProjects/Argos/app/src/main/res/layout/activity_main.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/knedl/StudioProjects/Argos/app/src/main/res/layout/fragment_argos.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/knedl/StudioProjects/Argos/app/src/main/res/layout/fragment_plastic_types.xml" value="0.2" />
@@ -19,6 +15,10 @@
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/drawable/rounded_border_yellow.xml" value="0.2265625" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_argos.xml" value="0.1" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_refund_type.xml" value="0.16259057971014493" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_search_fragment.xml" value="0.234375" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_type1.xml" value="0.234375" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_type2_fragment.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/products_recycler.xml" value="0.11246200607902736" />
       </map>
     </option>
   </component>
