@@ -29,6 +29,8 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -41,8 +43,12 @@ public class search_fragment extends Fragment {
     private static final String TAG = "getall";
     private FirebaseFirestore db= FirebaseFirestore.getInstance();
     private  CollectionReference productRef = db.collection("Products");
+   private FirebaseStorage storage = FirebaseStorage.getInstance();
+   private StorageReference storageRef= storage.getReference();
     private ProductAdaptor adapter;
+   // private RecyclerViewAdapter adapter;
     RecyclerView recyclerView;
+    private List<ProductsModel>productsList;
 
     public search_fragment() {
         // Required empty public constructor
@@ -57,16 +63,20 @@ public class search_fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_search_fragment, container, false);
         recyclerView= v.findViewById(R.id.productRecyclerView);
-        setUpRecyclerView();
+
+        setUpRecyclerView(productsList);
         GetAllProducts();
         return v;
     }
 
 
-    private void setUpRecyclerView() {
+    private void setUpRecyclerView(List<ProductsModel>productList) {
+        //productsList= new ArrayList<>();
+        recyclerView= recyclerView.findViewById(R.id.productRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
         Query query = productRef.orderBy("name", Query.Direction.ASCENDING);
         FirestoreRecyclerOptions<ProductsModel> options = new FirestoreRecyclerOptions.Builder<ProductsModel>()
@@ -74,10 +84,11 @@ public class search_fragment extends Fragment {
                 .build();
 
         adapter = new ProductAdaptor(options);
+        //adapter = new RecyclerViewAdapter( getContext(),productsList);
         //recyclerView.setHasFixedSize(true);
 
         recyclerView.setAdapter(adapter);
-
+        Log.d(TAG, "in setUpRecycleView  " + options);
     }
 
     @Override
@@ -91,7 +102,7 @@ public class search_fragment extends Fragment {
     public void onStop() {
 
         super.onStop();
-        adapter.stopListening();
+        //adapter.stopListening();
     }
 
     private void GetAllProducts() {
@@ -105,13 +116,17 @@ public class search_fragment extends Fragment {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 Log.d(TAG, document.getId() + " => " + document.getData());
+                                //setUpRecyclerView();
                             }
                         } else {
                             Log.d(TAG, "Error getting documents: ", task.getException());
                         }
+
                     }
                 });
     }
+
+
 
 
 }

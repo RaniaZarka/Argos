@@ -5,59 +5,69 @@ import android.graphics.drawable.Drawable;
 public class ProductsModel {
 
 public String name;
-public Drawable image;
-public Drawable type;
+/*public String image;
+    public String smiley;
+public String type;*/
 public String details;
-public Drawable smiley;
 
-    public ProductsModel(){}
+    public ProductsModel(String name, String details) {
+        this.name = name;
+        this.details = details;
+    }
 
-    public ProductsModel(String name, Drawable image, Drawable type, String details, Drawable smiley) {
+
+
+  /*  public ProductsModel(String name, String image, String type, String details, String smiley) {
         this.name = name;
         this.image = image;
         this.type = type;
         this.details = details;
-        this.smiley=smiley;
-    }
-    
-    public Drawable getSmiley() {
-        return smiley;
-    }
+        this.smiley = smiley;
+    }*/
+
+
+
+    public ProductsModel(){}
 
 
     public String getName() {
         return name;
     }
-
-    public Drawable getImage() {
-        return image;
-    }
-
-    public Drawable getType() {
+  /*  public String getType() {
         return type;
     }
+    public String getImage() {
+        return image;
+    }
+    public String getSmiley() {
+        return smiley;
+    }*/
 
     public String getDetails() {
         return details;
     }
 
-    public void setSmiley(Drawable smiley) {
-        this.smiley = smiley;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
-
-    public void setImage(Drawable image) {
-        this.image = image;
-    }
-
-    public void setType(Drawable type) {
-        this.type = type;
-    }
-
     public void setDetails(String details) {
         this.details = details;
     }
+
+  /*  public void setImage(String image) {
+        this.image = image;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+
+
+    public void setSmiley(String smiley) {
+        this.smiley = smiley;
+    }*/
+
+
+
 }
