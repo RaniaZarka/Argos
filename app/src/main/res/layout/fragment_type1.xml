@@ -76,86 +76,142 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="fill_vertical"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:gravity="center"
             android:id="@+id/TextField1"
             android:textSize="15sp"
             android:textColor="@color/white"/>
 
-        <LinearLayout
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:padding="8dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:src="@drawable/plasticbox"/>
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_wrongicon2"/>
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="2"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/plastic_box"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_righticon"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
                 android:src="@drawable/glassbox"/>
 
-        </LinearLayout>
+            </TableRow>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_wrongicon2"/>
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="2"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
                 android:src="@drawable/plasticpepsi"/>
 
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_righticon"/>
+
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="2"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
                 android:src="@drawable/canpepsi"/>
 
-        </LinearLayout>
+            </TableRow>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="8dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_wrongicon2"/>
+
+
+                <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/polyester_shirt"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_righticon"/>
 
             <ImageView
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="2"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:src="@drawable/plyestershirt"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
                 android:src="@drawable/cottonshirt"/>
 
-        </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="fill_vertical"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:gravity="center"
             android:id="@+id/TextFieldTwo"
             android:textSize="15sp"
