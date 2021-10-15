@@ -54,9 +54,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_weight="2"
-            android:tint="@color/argo_orange"
-            android:tintMode="add"
-            android:src="@drawable/smileyface"/>
+            android:src="@mipmap/ic_smileyfacegood"/>
 
 
     </LinearLayout>

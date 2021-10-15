@@ -11,12 +11,6 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link type2_fragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-
 public class type3_fragment extends Fragment {
 
     @Override

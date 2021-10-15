@@ -55,7 +55,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_weight="2"
-            android:src="@drawable/oksmiley"/>
+            android:src="@mipmap/ic_smileyfacebad"/>
 
 
     </LinearLayout>
