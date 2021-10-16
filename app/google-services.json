@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "391238159774",
+    "project_id": "argo-9e2c7",
+    "storage_bucket": "argo-9e2c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391238159774:android:190bb5e84c69d93cd05a8f",
+        "android_client_info": {
+          "package_name": "com.example.cargo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391238159774-hd3mkf6ept4ldh5a9a2akuv4st095sc0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjcVS4qhKEpPWVnZmD65eFLK2xyYWHzac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391238159774-hd3mkf6ept4ldh5a9a2akuv4st095sc0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
