@@ -30,15 +30,27 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_margin="10dp"
-        android:background="@color/argo_orange">
+        android:background="@drawable/rounded_border_orange">
+
+        <ImageButton
+            android:id="@+id/back_arrow_search_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/argo_orange"
+            android:src="@drawable/ic_arrow_back" />
+
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_margin="20dp"
+            android:background="@drawable/rounded_border_white"
+            android:paddingLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
             android:id="@+id/inputSearch"
-            android:hint="Search"
+            android:hint="  Search"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
             android:textColor="@color/argo_blue"/>
     </LinearLayout>
         <LinearLayout
@@ -47,7 +59,7 @@
             android:layout_weight="7"
             android:orientation="vertical"
             android:layout_margin="10dp"
-            android:background="@color/argo_blue">
+            android:background="@drawable/rounded_border_blue">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/productRecyclerView"

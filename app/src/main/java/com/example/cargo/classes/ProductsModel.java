@@ -1,31 +1,27 @@
 package com.example.cargo.classes;
 
-import android.graphics.drawable.Drawable;
+import android.net.Uri;
 
 public class ProductsModel {
 
-public String name;
-/*public String image;
+    public String name;
+    public String image;
     public String smiley;
-public String type;*/
-public String details;
+    public String type;
+    public String details;
 
     public ProductsModel(String name, String details) {
         this.name = name;
         this.details = details;
     }
 
-
-
-  /*  public ProductsModel(String name, String image, String type, String details, String smiley) {
+    public ProductsModel(String name, String image, String type, String details, String smiley) {
         this.name = name;
         this.image = image;
         this.type = type;
         this.details = details;
         this.smiley = smiley;
-    }*/
-
-
+    }
 
     public ProductsModel(){}
 
@@ -33,7 +29,7 @@ public String details;
     public String getName() {
         return name;
     }
-  /*  public String getType() {
+    public String getType() {
         return type;
     }
     public String getImage() {
@@ -41,7 +37,7 @@ public String details;
     }
     public String getSmiley() {
         return smiley;
-    }*/
+    }
 
     public String getDetails() {
         return details;
@@ -54,7 +50,7 @@ public String details;
         this.details = details;
     }
 
-  /*  public void setImage(String image) {
+    public void setImage(String image) {
         this.image = image;
     }
 
@@ -62,11 +58,9 @@ public String details;
         this.type = type;
     }
 
-
-
     public void setSmiley(String smiley) {
         this.smiley = smiley;
-    }*/
+    }
 
 
 
