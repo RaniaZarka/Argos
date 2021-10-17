@@ -122,6 +122,7 @@ public class search_fragment extends Fragment {
                 adapter= new ProductAdaptor(getContext(),productsList);
                 recyclerView.setAdapter(adapter);
                 Log.d(TAG, "the whole list " + productsList);
+                sortList();
                 adapter.notifyDataSetChanged();
 
             }
@@ -153,5 +154,17 @@ public class search_fragment extends Fragment {
             }
         }
         adapter.filterList(filteredList);
+    }
+
+
+    private void sortList(){
+
+        Collections.sort(productsList, new Comparator<ProductsModel>() {
+            @Override
+            public int compare(ProductsModel productsModel, ProductsModel t1) {
+                return productsModel.getName().compareToIgnoreCase(t1.getName());
+            }
+        });
+        adapter.notifyDataSetChanged();
     }
 }
