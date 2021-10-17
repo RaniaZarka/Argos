@@ -45,6 +45,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -83,16 +84,35 @@ public class search_fragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_search_fragment, container, false);
         ImageButton button = v.findViewById(R.id.back_arrow_search_fragment);
         button.setOnClickListener(OnBackClick);
+
+        TextView textWebsite= v.findViewById(R.id.search_website);
+        textWebsite.setText("For more information visit us on www.website.com");
+
         recyclerView= v.findViewById(R.id.productRecyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager( new LinearLayoutManager(requireContext()));
 
         productsList= new ArrayList<>();
         searchText= v.findViewById(R.id.inputSearch);
+        searchText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+              filter(editable.toString());
+            }
+        });
         //because of location of database was different than my own location, I had to insert the link fo the database inside getInstance
         // otherwise it could have been empty
         dbRef= FirebaseDatabase.getInstance("https://argo-9e2c7-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Products");
-
 
         dbRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -100,12 +120,13 @@ public class search_fragment extends Fragment {
                 for(DataSnapshot dataSnapshot: snapshot.getChildren() ){
                     ProductsModel productsModel = dataSnapshot.getValue(ProductsModel.class);
                     productsList.add(productsModel);
+
                 }
                 adapter= new ProductAdaptor(getContext(),productsList);
-
                 recyclerView.setAdapter(adapter);
                 Log.d(TAG, "the whole list " + productsList);
                 adapter.notifyDataSetChanged();
+
             }
 
             @Override
@@ -123,5 +144,19 @@ public class search_fragment extends Fragment {
             Navigation.findNavController(requireView()).navigate(R.id.fragment_argos);
         }
     };
+
+    private void filter(String text){
+        ArrayList<ProductsModel>filteredList= new ArrayList<>();
+        for ( ProductsModel product: productsList){
+            if(product.getName().toLowerCase().contains(text.toLowerCase())){
+                filteredList.add(product);
+            }
+            else{
+                Toast.makeText(getContext(), "Item not found", Toast.LENGTH_SHORT).show();
+            }
+        }
+        adapter.filterList(filteredList);
+
+    }
 
 }

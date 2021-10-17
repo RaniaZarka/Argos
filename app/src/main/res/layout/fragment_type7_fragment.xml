@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -22,38 +23,40 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal"
         android:background="@color/argo_orange">
 
         <ImageButton
-            android:layout_width="50dp"
+            android:layout_width="0dp"
             android:layout_height="80dp"
             android:src="@drawable/arrowback"
             android:id="@+id/ImageButtonBackArrow7"
             android:layout_weight="1"
-            android:scaleType="fitXY"
+            android:scaleType="centerCrop"
             android:layout_gravity="center"
             android:backgroundTint="@color/argo_orange"
-            android:tint="@color/argo_orange"
-            android:tintMode="add"/>
+            android:tintMode="add"
+            app:tint="@color/argo_orange" />
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
             android:layout_gravity="center"
             android:layout_weight="3"
-            android:tint="@color/argo_orange"
             android:tintMode="screen"
-            android:src="@drawable/white_recycle_logo_7"/>
+            android:src="@drawable/white_recycle_logo_7"
+            app:tint="@color/argo_orange" />
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
             android:layout_gravity="center"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:src="@mipmap/ic_smileyfacebad"/>
 
 

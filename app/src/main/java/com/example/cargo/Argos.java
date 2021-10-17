@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 
 public class Argos extends Fragment {
@@ -35,6 +36,7 @@ public class Argos extends Fragment {
         ImageButton type7Button = view.findViewById(R.id.type7);
         Button guide = view.findViewById(R.id.guide);
         Button search = view.findViewById(R.id.search);
+        TextView contact = view.findViewById(R.id.contact_click);
 
         type1Button.setOnClickListener(onClickType1);
         type2Button.setOnClickListener(onClickType2);
@@ -46,6 +48,7 @@ public class Argos extends Fragment {
 
         guide.setOnClickListener(onClickToGuide);
         search.setOnClickListener(onClickToSearch);
+        contact.setOnClickListener(onClickContact);
 
             return view;
         }
@@ -111,6 +114,13 @@ public class Argos extends Fragment {
         @Override
         public void onClick(View view) {
             Navigation.findNavController(requireView()).navigate(R.id.search_fragment);
+        }
+    };
+
+    View.OnClickListener onClickContact= new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Navigation.findNavController(requireView()).navigate(R.id.contact_fragment);
         }
     };
 

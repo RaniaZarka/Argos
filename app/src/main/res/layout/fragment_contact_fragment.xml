@@ -1,14 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".contact_fragment">
+    android:orientation="vertical"
+    tools:context=".type1_fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/argo"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:background="@color/argo_blue">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="0.5"
+             android:orientation="horizontal">
+             <ImageButton
+                 android:layout_width="50dp"
+                 android:layout_height="80dp"
+                 android:src="@drawable/arrowback"
+                 android:id="@+id/contact_back_arrow"
+                 android:layout_gravity="center"
+                 android:scaleType="centerCrop"
+                 android:backgroundTint="@color/argo_blue"
+                 android:tintMode="add"
+                 app:tint="@color/argo_blue" />
+         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/contact_fragment_text_1"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/contact_fragment_text_2"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/contact_fragment_text_3"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/contact_fragment_text_4"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/contact_fragment_text_5"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/contact_fragment_text_6"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/argo_blue"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="120dp"
+        android:paddingRight="120dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_facebook"
+            android:paddingLeft="70dp"
+            android:layout_marginBottom="10dp"
+
+            android:backgroundTint="@color/white"
+            android:layout_gravity="end"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:paddingRight="70dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_facebook" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/contact_textFieldWebsite"
+            android:layout_gravity="fill_vertical"
+            android:textSize="12sp"
+            android:textColor="@color/argo_blue"/>
+
+    </LinearLayout>
+
+</LinearLayout>

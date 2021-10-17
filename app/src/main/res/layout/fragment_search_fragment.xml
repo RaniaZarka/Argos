@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,16 +10,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:background="@color/white">
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="0dp"
-            android:src="@drawable/argo" />
+            android:layout_height="40dp"
+            android:src="@drawable/argo"/>
+
     </LinearLayout>
 <LinearLayout
     android:layout_width="match_parent"
@@ -35,12 +34,16 @@
         android:background="@drawable/rounded_border_orange">
 
         <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:src="@drawable/arrowback"
             android:id="@+id/back_arrow_search_fragment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
             android:backgroundTint="@color/argo_orange"
-            android:src="@drawable/ic_arrow_back" />
+            android:tintMode="add"
+            app:tint="@color/argo_orange" />
+
 
         <EditText
             android:layout_width="match_parent"
@@ -56,9 +59,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="7"
+            android:layout_weight="10"
             android:orientation="vertical"
-            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:background="@drawable/rounded_border_blue">
 
             <androidx.recyclerview.widget.RecyclerView
@@ -71,52 +76,24 @@
         </LinearLayout>
 
 </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.7"
-        android:background="@drawable/rounded_border_white"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="10dp"
-        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:text="Contact"
-            android:textAlignment="center"
-            android:autoSizeTextType="uniform"
-            android:textColor="@color/argo_blue"
-            android:clickable="true"/>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2">
+
             <TextView
-                android:layout_width="0dp"
-                android:layout_weight="1.5"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="For more information, visit us on"
-                android:textAlignment="textEnd"
-                android:autoSizeTextType="uniform"
-                android:textColor="@color/argo_blue"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:clickable="true"
-                android:text=" www.website.com"
-                android:textAlignment="textStart"
-                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:id="@+id/search_website"
+                android:layout_gravity="fill_vertical"
+                android:textSize="12sp"
                 android:textColor="@color/argo_blue"/>
 
         </LinearLayout>
+
     </LinearLayout>
 
 
 
-</LinearLayout>

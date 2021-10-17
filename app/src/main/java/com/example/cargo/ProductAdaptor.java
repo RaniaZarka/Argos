@@ -58,8 +58,6 @@ public ProductAdaptor(Context context, List<ProductsModel>productList){
     public void onBindViewHolder(@NonNull ProductHolder holder, int position) {
          ProductsModel currentProduct= productList.get(position);
 
-         StorageReference imageStorageReference = FirebaseStorage.getInstance().getReference().child("image");
-
          holder.productName.setText(currentProduct.getName());
          Picasso.get()
                  .load(currentProduct.getImage())
@@ -76,11 +74,17 @@ public ProductAdaptor(Context context, List<ProductsModel>productList){
                 .fit()
                 .centerInside()
                 .into(holder.productSmiley);
+
     }
 
     @Override
     public int getItemCount() {
         return productList.size();
+    }
+
+    public void filterList(ArrayList<ProductsModel> filteredList){
+         productList= filteredList;
+         notifyDataSetChanged();
     }
 
     class ProductHolder extends RecyclerView.ViewHolder{

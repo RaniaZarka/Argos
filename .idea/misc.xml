@@ -3,20 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/drawable/button_border.xml" value="0.15185185185185185" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/layout/fragment_argos.xml" value="0.12360688956433637" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/layout/fragment_contact_fragment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/layout/fragment_refund_type.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/layout/fragment_type1.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/layout/fragment_type2_fragment.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/layout/fragment_type3_fragment.xml" value="0.12360688956433637" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/layout/fragment_type4_fragment.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/layout/fragment_type5_fragment.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/layout/fragment_type6_fragment.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/layout/fragment_type7_fragment.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/layout/products_recycler.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Aukse/Downloads/Argos/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
         <entry key="..\:/Users/Aukse/Downloads/Argos1/app/src/main/res/layout/fragment_type1.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/Aukse/Downloads/Argos1/app/src/main/res/layout/fragment_type2_fragment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/knedl/StudioProjects/Argos/app/src/main/res/layout/activity_main.xml" value="0.13020833333333334" />
@@ -30,10 +17,16 @@
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/drawable/rounded_border_white.xml" value="0.2265625" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/drawable/rounded_border_yellow.xml" value="0.2265625" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_argos.xml" value="0.1" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_contact_fragment.xml" value="0.176" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_refund_type.xml" value="0.16259057971014493" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_search_fragment.xml" value="0.234375" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_type1.xml" value="0.234375" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_type2_fragment.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_type3_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_type4_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_type5_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_type6_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_type7_fragment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/products_recycler.xml" value="0.264" />
       </map>
     </option>
