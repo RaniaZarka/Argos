@@ -35,8 +35,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-//public class ProductAdaptor extends FirestoreRecyclerAdapter<ProductsModel, ProductAdaptor.ProductHolder> {
-
 public class ProductAdaptor extends RecyclerView.Adapter<ProductAdaptor.ProductHolder>{
 private Context context;
 private List<ProductsModel> productList;

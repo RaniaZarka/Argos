@@ -1,6 +1,7 @@
 package com.example.cargo;
 
 import android.app.ProgressDialog;
+import android.content.ClipData;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -46,6 +47,7 @@ import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -55,13 +57,9 @@ import java.util.Map;
 public class search_fragment extends Fragment {
 
     private static final String TAG = "getall";
-    //private FirebaseFirestore db= FirebaseFirestore.getInstance();
-    //FirestoreRecyclerAdapter<ProductsModel, ProductAdaptor.ProductHolder> pAdapter;
-    //private  CollectionReference productRef;
-    //= db.collection("Products");
+
     RecyclerView recyclerView;
     private ProductAdaptor adapter;
-    FirebaseDatabase database;
     DatabaseReference dbRef;
     private List<ProductsModel>productsList;
     EditText searchText;
@@ -113,15 +111,14 @@ public class search_fragment extends Fragment {
         //because of location of database was different than my own location, I had to insert the link fo the database inside getInstance
         // otherwise it could have been empty
         dbRef= FirebaseDatabase.getInstance("https://argo-9e2c7-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Products");
-
         dbRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot: snapshot.getChildren() ){
                     ProductsModel productsModel = dataSnapshot.getValue(ProductsModel.class);
                     productsList.add(productsModel);
-
                 }
+
                 adapter= new ProductAdaptor(getContext(),productsList);
                 recyclerView.setAdapter(adapter);
                 Log.d(TAG, "the whole list " + productsList);
@@ -156,7 +153,5 @@ public class search_fragment extends Fragment {
             }
         }
         adapter.filterList(filteredList);
-
     }
-
 }

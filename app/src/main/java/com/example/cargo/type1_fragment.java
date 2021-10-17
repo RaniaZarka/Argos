@@ -2,7 +2,6 @@ package com.example.cargo;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
@@ -11,9 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
-import com.example.cargo.classes.PlasticType;
-import com.example.cargo.classes.PlasticTypeList;
 
 public class type1_fragment extends Fragment {
 

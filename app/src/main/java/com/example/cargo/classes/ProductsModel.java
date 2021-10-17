@@ -2,6 +2,8 @@ package com.example.cargo.classes;
 
 import android.net.Uri;
 
+import java.util.Collections;
+
 public class ProductsModel {
 
     public String name;
@@ -9,11 +11,6 @@ public class ProductsModel {
     public String smiley;
     public String type;
     public String details;
-
-    public ProductsModel(String name, String details) {
-        this.name = name;
-        this.details = details;
-    }
 
     public ProductsModel(String name, String image, String type, String details, String smiley) {
         this.name = name;

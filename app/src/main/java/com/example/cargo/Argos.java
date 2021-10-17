@@ -15,10 +15,8 @@ import android.widget.TextView;
 
 public class Argos extends Fragment {
 
-
     public Argos() {
         // Required empty public constructor
-        //this.type1Button = type1Button;
     }
 
     @Override
@@ -63,14 +61,12 @@ public class Argos extends Fragment {
     View.OnClickListener onClickType2 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            //ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(2);
             Navigation.findNavController(requireView()).navigate(R.id.type2_fragment);
         }
     };
     View.OnClickListener onClickType3 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            //ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(3);
             Navigation.findNavController(requireView()).navigate(R.id.type3_fragment);
         }
     };
@@ -84,21 +80,18 @@ public class Argos extends Fragment {
     View.OnClickListener onClickType5 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            //ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(5);
             Navigation.findNavController(requireView()).navigate(R.id.type5_fragment);
         }
     };
     View.OnClickListener onClickType6 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            //ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(6);
             Navigation.findNavController(requireView()).navigate(R.id.type6_fragment);
         }
     };
     View.OnClickListener onClickType7 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            //ArgosDirections.ActionArgosToPlasticTypes action = ArgosDirections.actionArgosToPlasticTypes(7);
             Navigation.findNavController(requireView()).navigate(R.id.type7_fragment);
         }
     };
