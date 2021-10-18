@@ -79,7 +79,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:id="@+id/TextField1"
-            android:textSize="15sp"
+            android:textSize="25sp"
             android:textColor="@color/white"/>
 
         <TableLayout
@@ -176,7 +176,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:id="@+id/TextFieldTwo"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textColor="@color/white"/>
 
     </LinearLayout>
