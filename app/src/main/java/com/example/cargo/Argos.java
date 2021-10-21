@@ -1,10 +1,12 @@
 package com.example.cargo;
 
+import android.graphics.Paint;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,6 +49,8 @@ public class Argos extends Fragment {
         guide.setOnClickListener(onClickToGuide);
         search.setOnClickListener(onClickToSearch);
         contact.setOnClickListener(onClickContact);
+        //contact.setText((Html.fromHtml("<u>"+"Contact"+"</u>")));
+        contact.setPaintFlags(contact.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
             return view;
         }

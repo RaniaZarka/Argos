@@ -1,5 +1,7 @@
 package com.example.cargo;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -28,26 +30,30 @@ public class contact_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-      View view =  inflater.inflate(R.layout.fragment_contact_fragment, container, false);
+        View view = inflater.inflate(R.layout.fragment_contact_fragment, container, false);
 
 
         ImageButton button = view.findViewById(R.id.contact_back_arrow);
+        ImageButton fb = view.findViewById(R.id.contact_fb);
+        ImageButton in = view.findViewById(R.id.contact_in);
         TextView textField1 = view.findViewById(R.id.contact_fragment_text_1);
         TextView textField2 = view.findViewById(R.id.contact_fragment_text_2);
         TextView textField3 = view.findViewById(R.id.contact_fragment_text_3);
         TextView textField4 = view.findViewById(R.id.contact_fragment_text_4);
         TextView textField5 = view.findViewById(R.id.contact_fragment_text_5);
         TextView textField6 = view.findViewById(R.id.contact_fragment_text_6);
-        TextView textField7= view.findViewById(R.id.contact_textFieldWebsite);
+        TextView textField7 = view.findViewById(R.id.contact_textFieldWebsite);
 
         textField1.setText("Address");
         textField2.setText("Argo\n" + "Håndværkevej 70\n" + "4000 Roskilde");
-        textField3.setText("Tlf: +45 46 34 75 00\n"+"Fax: +45 46 34 75 10\n"+"Mail: info@argo.dk");
-        textField4.setText("Administration\n"+"opening hours");
-        textField5.setText("Monday-thursday 8.00 - 15.30\n"+"Friday 8.00 - 14.00");
+        textField3.setText("Tlf: +45 46 34 75 00\n" + "Fax: +45 46 34 75 10\n" + "Mail: info@argo.dk");
+        textField4.setText("Administration\n" + "opening hours");
+        textField5.setText("Monday-thursday 8.00 - 15.30\n" + "Friday 8.00 - 14.00");
         textField6.setText("Find us on");
         textField7.setText("For more information visit us on www.website.com");
         button.setOnClickListener(OnBackClick);
+        fb.setOnClickListener(toFb);
+        in.setOnClickListener(toIn);
         return view;
 
     }
@@ -56,6 +62,24 @@ public class contact_fragment extends Fragment {
         @Override
         public void onClick(View view) {
             Navigation.findNavController(requireView()).navigate(R.id.fragment_argos);
+        }
+    };
+
+    View.OnClickListener toFb = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Uri uri = Uri.parse("https://www.facebook.com/argo.danmark/?fref=ts");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
+        }
+    };
+
+    View.OnClickListener toIn = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Uri uri = Uri.parse("https://www.linkedin.com/company/10805987/");
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
         }
     };
 }

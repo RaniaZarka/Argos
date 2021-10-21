@@ -127,27 +127,45 @@
         android:paddingLeft="120dp"
         android:paddingRight="120dp"
         android:layout_marginBottom="10dp">
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        >
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/argo_blue"/>
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/contact_in"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_facebook"
-            android:paddingLeft="70dp"
+            android:src="@drawable/in"
             android:layout_marginBottom="10dp"
-
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/argo_blue"
             android:layout_gravity="end"/>
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/contact_fb"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
-            android:paddingRight="70dp"
-            android:backgroundTint="@color/white"
-            android:src="@drawable/ic_facebook" />
+            android:backgroundTint="@color/argo_blue"
+            android:src="@drawable/fb" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/argo_blue"/>
+    </TableRow>
+</TableLayout>
     </LinearLayout>
 
     <LinearLayout

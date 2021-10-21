@@ -16,8 +16,10 @@
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/drawable/rounded_border_red.xml" value="0.2265625" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/drawable/rounded_border_white.xml" value="0.2265625" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/drawable/rounded_border_yellow.xml" value="0.2265625" />
-        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_argos.xml" value="0.1" />
-        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_contact_fragment.xml" value="0.176" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/drawable/text_change.xml" value="0.2703125" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/drawable/types_button.xml" value="0.1675925925925926" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_argos.xml" value="0.16" />
+        <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_contact_fragment.xml" value="0.1" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_refund_type.xml" value="0.16259057971014493" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_search_fragment.xml" value="0.234375" />
         <entry key="..\:/Users/rania/AndroidStudioProjects/Argo/app/src/main/res/layout/fragment_type1.xml" value="0.234375" />
