@@ -49,7 +49,7 @@ public class Argos extends Fragment {
         guide.setOnClickListener(onClickToGuide);
         search.setOnClickListener(onClickToSearch);
         contact.setOnClickListener(onClickContact);
-        //contact.setText((Html.fromHtml("<u>"+"Contact"+"</u>")));
+
         contact.setPaintFlags(contact.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
             return view;
