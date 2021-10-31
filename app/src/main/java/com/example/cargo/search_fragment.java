@@ -1,5 +1,6 @@
 package com.example.cargo;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.ClipData;
 import android.os.Bundle;
@@ -95,12 +96,10 @@ public class search_fragment extends Fragment {
         searchText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
             }
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
             }
 
             @Override
@@ -110,8 +109,12 @@ public class search_fragment extends Fragment {
         });
         //because of location of database was different than my own location, I had to insert the link fo the database inside getInstance
         // otherwise it could have been empty
-        dbRef= FirebaseDatabase.getInstance("https://argo-9e2c7-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Products");
+
+        dbRef= FirebaseDatabase.getInstance("https://argo-9e2c7-default-rtdb.europe-west1.firebasedatabase.app/")
+                  .getReference("Products");
+
         dbRef.addValueEventListener(new ValueEventListener() {
+            @SuppressLint("NotifyDataSetChanged")
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot: snapshot.getChildren() ){
@@ -143,6 +146,7 @@ public class search_fragment extends Fragment {
         }
     };
 
+    // for the search function
     private void filter(String text){
         ArrayList<ProductsModel>filteredList= new ArrayList<>();
         for ( ProductsModel product: productsList){
@@ -157,9 +161,11 @@ public class search_fragment extends Fragment {
     }
 
 
+    @SuppressLint("NotifyDataSetChanged")
+
     private void sortList(){
 
-        Collections.sort(productsList, new Comparator<ProductsModel>() {
+        productsList.sort(new Comparator<ProductsModel>() {
             @Override
             public int compare(ProductsModel productsModel, ProductsModel t1) {
                 return productsModel.getName().compareToIgnoreCase(t1.getName());

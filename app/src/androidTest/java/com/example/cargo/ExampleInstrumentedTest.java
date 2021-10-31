@@ -39,4 +39,24 @@ public class ExampleInstrumentedTest {
     }
 
 
+    @Test
+    public void BackBtnClickedSearchPage() {
+        onView(withId(R.id.search)).perform(click());
+        onView(withId(R.id.back_arrow_search_fragment)).perform(click());
+        onView(withId(R.id.contact_click)).check(matches(isDisplayed()));
+    }
+
+    @Test
+    // test if recyclerview comes into view when the activity is launched
+    public void ListOfMessages_Visible_onLaunch(){
+        onView(withId(R.id.search)).perform(click());
+        onView(withId(R.id.productRecyclerView)).check(matches(isDisplayed()));
+    }
+    @Test
+    public void useAppContext() {
+        // Context of the app under test.
+        Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
+        assertEquals("com.example.cargo", appContext.getPackageName());
+    }
+
 }
